@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.az.UserSpec" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-02-17T13:43:56" hostname="azbpmlap3" time="1.217">
+  <properties/>
+  <testcase name="test something" classname="com.az.UserSpec" time="1.113"/>
+  <testcase name="username must have minimum 5 characters" classname="com.az.UserSpec" time="0.103"/>
+  <system-out><![CDATA[test something calling 
+inside custom test
+Field error in object 'com.az.User' on field 'username': rejected value [bala]; codes [com.az.User.username.size.error.com.az.User.username,com.az.User.username.size.error.username,com.az.User.username.size.error.java.lang.String,com.az.User.username.size.error,user.username.size.error.com.az.User.username,user.username.size.error.username,user.username.size.error.java.lang.String,user.username.size.error,com.az.User.username.size.toosmall.com.az.User.username,com.az.User.username.size.toosmall.username,com.az.User.username.size.toosmall.java.lang.String,com.az.User.username.size.toosmall,user.username.size.toosmall.com.az.User.username,user.username.size.toosmall.username,user.username.size.toosmall.java.lang.String,user.username.size.toosmall,size.toosmall.com.az.User.username,size.toosmall.username,size.toosmall.java.lang.String,size.toosmall]; arguments [username,class com.az.User,bala,5,15]; default message [Property [{0}] of class [{1}] with value [{2}] does not fall within the valid size range from [{3}] to [{4}]]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
