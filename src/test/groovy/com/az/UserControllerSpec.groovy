@@ -156,4 +156,18 @@ class UserControllerSpec extends Specification {
             response.redirectedUrl == '/user/index'
             flash.message != null
     }
+
+    void "uid should be generated from first and last character of username plus ID"() {
+
+        println "********* Check UID **********"
+        when: " A domain instance is created or updated "
+            populateValidParams(params)
+        then: " check UID logic"
+            println(""+params.username)
+            def user = new User(params).save(flush: true)
+            def uid = params.username.take(1)+ params.username.drop(params.username.length()-1) + user.id.toString();
+            println " uid :"+uid
+
+            "bi1" == uid
+    }
 }
